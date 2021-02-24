@@ -1,4 +1,3 @@
 FROM ghcr.io/yzop/mir:latest
-WORKDIR /app/
-RUN chmod 777 /app
+WORKDIR /app
 CMD bash -c "$(curl -sL "$SCRIPT")"
